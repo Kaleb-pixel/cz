@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>login</title>
+        <link rel="stylesheet" type="text/css" href="src/login.css">
+    </head>
+    <body>
+        <a  class="img2 mr-3 " href="comfortzone.html"> <img id="logo" src="images/comfort_zone_logo.png" width="100"  ></a>
+    
+        <div class="login-page">
+        <div class="form">
+            <form class="registry-form">
+            <input type="text" placeholder="User_Name">
+            <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <br>
+            <select name="Gender" id="Gender">
+                <option disabled selected value >Gender</option>
+                <option value="Male">
+                    Male
+                </option>
+                <option value="Female">Female</option>
+                
+            </select><br>
+        
+        <input type="text" placeholder="Country">
+        <input type="text" placeholder="City">
+        <input type="text" placeholder="Postcode">
+        
+            <select name="Shipping" id="Shipping">
+                <option disabled selected value>
+                    Shipping Method
+                </option>
+                <option value="Free shipping">
+                    Free Shipping
+                </option>
+                
+                <option value="two day shipping">Two day shipping</option>
+                <option value="one day shipping"> one day shipping</option>
+            
+            
+            </select>
+            <p class="p1">Choose your payment method:</p>
+            <select name="Payment" id="Payment">
+                <option disabled selected value>
+                    Payment Method 
+                </option>
+                <option value="M-cash">
+                    M-cash
+                </option>
+                
+                <option value="Credit card">Credit-card</option>
+                <option value="Alipay">Alipay</option>
+            
+            
+            </select>
+            
+           <br>
+            
+               <br/>
+               <div class="p1">
+                <label>Sign me up for email updates <input type="checkbox" name="sign me up" checked="checked ">  </label><br/> 
+                <label> Securely save my password and other information<input type="checkbox" name ="save payment" checked="checked"></label>
+            <br/>
+        </div>
+                
+            <button id="button">Submit </button>
+                <script>
+                    document.getElementById("button").onclick=function(){
+                        alert(" Hello! You Have Successfully Signned In. Go back and login");
+                    }
+                
+                
+                </script>
+             <p class="message">Already registered?<a href="#">Login</a> </p>
+            </form>
+            <form class=login-form>
+                <input type="text" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button id="button">Sign in</button>
+            <p class="message">Not registered?&nbsp;<a href="#">Signup</a> </p>
+            
+            </form>
+        </div>
+
+        </div>
+        <!-- footer -->
+<footer id="footer">Comfort Zone. Copyright &copy; 2020</footer>
+
+        <script src='https://code.jquery.com/jquery-3.4.1.min.js
+        '></script>
+
+        <script>
+            $('.message  a').click(function(){
+            $('form').animate({height:"toggle",opacity:"toggle"},"slow");
+            });
+        </script>
+
+</body>
+
+</html>
